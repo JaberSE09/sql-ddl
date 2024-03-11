@@ -1,20 +1,15 @@
--- from the terminal run:
--- psql < outer_space.sql
-
 DROP DATABASE IF EXISTS outer_space;
-
 CREATE DATABASE outer_space;
-
 \c outer_space
 
 CREATE TABLE planets
 (
   id SERIAL PRIMARY KEY,
-  name TEXT NOT NULL,
+  name VARCHAR(255) NOT NULL,
   orbital_period_in_years FLOAT NOT NULL,
-  orbits_around TEXT NOT NULL,
-  galaxy TEXT NOT NULL,
-  moons TEXT[]
+  orbits_around VARCHAR(255) NOT NULL,
+  galaxy VARCHAR(255) NOT NULL,
+  moons VARCHAR(255)[]
 );
 
 INSERT INTO planets

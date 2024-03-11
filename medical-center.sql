@@ -1,5 +1,3 @@
--- from the terminal run:
--- psql < music.sql
 
 DROP DATABASE IF EXISTS medical_center;
 
